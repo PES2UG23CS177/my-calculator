@@ -23,6 +23,16 @@ def divide(a, b):
         raise TypeError("Division requires numeric inputs")
     return a / b
 
+def power(a, b): 
+    """Raise a to the power of b""" 
+    return a ** b 
+ 
+def square_root(a): 
+    """Calculate square root of a""" 
+    if a < 0: 
+        raise ValueError("Cannot calculate square root of negative number") 
+    return a ** 0.5
+
 if __name__ == "__main__":
     print("🧮 Calculator Module")
     print(f"2 + 3 = {add(2, 3)}")
